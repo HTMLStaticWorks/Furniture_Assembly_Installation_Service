@@ -61,6 +61,17 @@ html.dark-mode .btn-secondary:hover {
   color: #111613;
 }
 
+html.dark-mode .btn-outline-dark {
+  color: var(--text-main);
+  border-color: var(--border);
+}
+
+html.dark-mode .btn-outline-dark:hover {
+  background-color: var(--text-main);
+  color: var(--background);
+  border-color: var(--text-main);
+}
+
 html.dark-mode .footer-bg {
     background-color: #111613 !important;
     color: #fff !important;
@@ -98,11 +109,27 @@ html.dark-mode .hero-bg::before {
     background-color: rgba(17, 22, 19, 0.85) !important;
 }
 
+/* Nav Menu Visibility */
+html.dark-mode .nav-link.text-main {
+    color: var(--text-main) !important;
+}
+html.dark-mode .nav-link.text-main:hover {
+    color: var(--primary) !important;
+}
+html.dark-mode .navbar-toggler i {
+    color: var(--text-main) !important;
+}
+
+
 /* Form Controls */
 html.dark-mode .form-control {
     background-color: var(--background);
     color: var(--text-main);
     border-color: var(--border);
+}
+html.dark-mode .form-control.bg-light {
+    background-color: var(--background) !important;
+    border: 1px solid var(--border) !important;
 }
 html.dark-mode .form-control:focus {
     background-color: var(--background-light);
