@@ -1,0 +1,486 @@
+/* ==========================================================================
+   FURNITURE ASSEMBLY & INSTALLATION SERVICE - PREMIUM CSS
+   ========================================================================== */
+
+/* Google Fonts: Manrope & DM Serif Display */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600&display=swap');
+
+:root {
+  /* Color System */
+  --primary: #26352F;
+  --secondary: #8B6245;
+  --background: #F5F1E9;
+  --background-light: #EAE4D9;
+  --card-bg: #FFFFFF;
+  --accent: #7D9A83;
+  --dark: #1C2420;
+  --text-main: #26302B;
+  --text-secondary: #707771;
+  --border: rgba(38, 48, 43, 0.10);
+
+  /* Typography */
+  --font-sans: 'Manrope', sans-serif;
+  --font-serif: 'DM Serif Display', serif;
+
+  /* Transitions */
+  --transition-fast: 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --transition-normal: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --transition-slow: 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --transition-architectural: 1.2s cubic-bezier(0.19, 1, 0.22, 1);
+
+  /* Card Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+}
+
+/* ==========================================================================
+   RESET & BASE
+   ========================================================================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  color: var(--text-main);
+  background-color: var(--background);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography Scale */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  color: var(--dark);
+  line-height: 1.2;
+}
+
+/* Desktop */
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  h3 {
+    font-size: 26px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 38px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+}
+
+.serif {
+  font-family: var(--font-serif);
+  font-weight: 400;
+}
+
+p {
+  color: var(--text-secondary);
+  font-size: 16px;
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary);
+  transition: color var(--transition-fast);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ==========================================================================
+   COMPONENTS
+   ========================================================================== */
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  border: 1px solid transparent;
+  line-height: 1;
+}
+
+.btn-primary {
+  background-color: var(--secondary);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(139, 98, 69, 0.25);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-secondary:hover {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+/* Cards */
+.service-card,
+.project-card {
+  background-color: var(--card-bg);
+  border-radius: var(--radius-md);
+  padding: 32px;
+  border: 1px solid var(--border);
+  transition: all var(--transition-normal);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card:hover,
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.04);
+}
+
+.service-card img {
+  border-radius: var(--radius-sm);
+  margin-bottom: 24px;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Sections */
+.section-padding {
+  padding: 100px 0;
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 60px 0;
+  }
+}
+
+/* ==========================================================================
+   UTILITIES
+   ========================================================================== */
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: var(--primary) !important;
+}
+
+.text-secondary {
+  color: var(--secondary) !important;
+}
+
+.bg-primary {
+  background-color: var(--primary) !important;
+}
+
+.bg-secondary {
+  background-color: var(--secondary) !important;
+}
+
+.mb-1 {
+  margin-bottom: 8px;
+}
+
+.mb-2 {
+  margin-bottom: 16px;
+}
+
+.mb-3 {
+  margin-bottom: 24px;
+}
+
+.mb-4 {
+  margin-bottom: 32px;
+}
+
+.mb-5 {
+  margin-bottom: 48px;
+}
+
+/* The Installation Flow Animation Classes */
+.animate-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity var(--transition-architectural), transform var(--transition-architectural);
+}
+
+.animate-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Active Nav State */
+.navbar-nav .nav-link.active {
+  color: var(--secondary) !important;
+  font-weight: 600;
+  position: relative;
+}
+
+.navbar-nav .nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 2px;
+  background-color: var(--secondary);
+}
+
+/* Scroll to Top */
+#scrollTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: var(--primary);
+  color: white;
+  cursor: pointer;
+  padding: 12px 16px;
+  border-radius: var(--radius-sm);
+  font-size: 18px;
+  transition: all var(--transition-fast);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#scrollTopBtn:hover {
+  background-color: var(--secondary);
+  transform: translateY(-3px);
+}
+
+/* Hero Background */
+.hero-bg {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(245, 241, 233, 0.85);
+  /* var(--background) with opacity */
+  z-index: 0;
+}
+
+.hero-bg>.container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Social Icons */
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--card-bg);
+  color: var(--primary);
+  transition: all var(--transition-fast);
+  border: 1px solid var(--border);
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  background-color: var(--secondary);
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+/* Grid adjustments requested */
+@media (max-width: 768px) {
+  .row.g-4>[class^="col-"] {
+    width: 100% !important;
+    flex: 0 0 100% !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* 3 cards, 3rd centered if it's the last one in a row of 3 */
+  /* Actually col-lg-4 naturally does 3 per row. The user said: "1024px view 3cards 3 rd card should be center and dont change width" */
+  /* We can ensure .col-lg-4 applies max-width and center alignment if it's the 3rd child on its own row, but standard grid does this. */
+}
+
+/* Footer Themes */
+.footer-bg {
+  background-color: var(--background-light);
+  color: var(--text-main);
+  border-top: 1px solid var(--border);
+}
+
+.footer-bg h3,
+.footer-bg h4 {
+  color: var(--dark);
+}
+
+.footer-text {
+  color: var(--text-secondary);
+}
+
+.footer-link {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.footer-link:hover {
+  color: var(--secondary);
+}
+
+/* Custom Updates */
+.theme-rtl-icon {
+  border: 1px solid var(--border) !important;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+#scrollTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: var(--primary);
+  color: white;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#scrollTop:hover {
+  background-color: var(--secondary);
+}
+
+.hero-section {
+  background-image: url('../images/hero-bg-placeholder.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  z-index: -1;
+}
+
+body.dark-mode .hero-section::before {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .navbar-collapse {
+    display: none !important;
+  }
+
+  .navbar-collapse.show {
+    display: block !important;
+  }
+
+  #mobile-menu-btn {
+    display: block !important;
+  }
+
+  /* Center 3rd card */
+  .row.three-cards>div:nth-child(3) {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* Mobile view 1 by 1 */
+  .col-md-6,
+  .col-lg-4,
+  .col-lg-3,
+  .col-lg-6 {
+    width: 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    margin-bottom: 20px;
+  }
+}

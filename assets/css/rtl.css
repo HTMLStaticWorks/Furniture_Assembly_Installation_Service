@@ -1,0 +1,54 @@
+/* ==========================================================================
+   RTL LOGICAL PROPERTIES AND OVERRIDES
+   ========================================================================== */
+
+/* 
+   RTL mode activates via the dir="rtl" attribute on the <html> element.
+   This file contains overrides for properties that are not handled automatically
+   by CSS logical properties (like margin-inline-start, etc.).
+*/
+
+html[dir="rtl"] {
+  /* Global RTL rules */
+  text-align: right;
+}
+
+html[dir="rtl"] body {
+  direction: rtl;
+}
+
+/* Typography alignment */
+html[dir="rtl"] .text-left {
+  text-align: right !important;
+}
+
+html[dir="rtl"] .text-right {
+  text-align: left !important;
+}
+
+/* Margin and Padding Overrides (if logical properties aren't used everywhere) */
+/* Example: converting margin-right to margin-left */
+html[dir="rtl"] .ml-auto {
+  margin-right: auto !important;
+  margin-left: 0 !important;
+}
+
+html[dir="rtl"] .mr-auto {
+  margin-left: auto !important;
+  margin-right: 0 !important;
+}
+
+/* Floats (if any) */
+html[dir="rtl"] .float-left {
+  float: right !important;
+}
+
+html[dir="rtl"] .float-right {
+  float: left !important;
+}
+
+/* Specific component overrides */
+/* Navbar, arrows, icons facing directions, etc. */
+html[dir="rtl"] .arrow-icon {
+  transform: rotate(180deg);
+}

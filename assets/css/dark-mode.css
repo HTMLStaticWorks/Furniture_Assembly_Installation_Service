@@ -1,0 +1,115 @@
+/* ==========================================================================
+   DARK MODE OVERRIDES
+   ========================================================================== */
+
+/* 
+   Dark mode activates via the .dark-mode class on the <html> element,
+   allowing JavaScript toggling.
+*/
+html.dark-mode {
+  --primary: #C59A6A; /* Adjusted for dark mode accent */
+  --secondary: #B8875A;
+  --background: #111613;
+  --background-light: #161D19;
+  --card-bg: #1B231F;
+  --accent: #8DA48F;
+  --dark: #F4F4EF;
+  --text-main: #F4F4EF;
+  --text-secondary: #9FA6A1;
+  --border: rgba(244, 244, 239, 0.10);
+}
+
+html.dark-mode body {
+  background-color: var(--background);
+  color: var(--text-main);
+}
+
+html.dark-mode h1, 
+html.dark-mode h2, 
+html.dark-mode h3, 
+html.dark-mode h4, 
+html.dark-mode h5, 
+html.dark-mode h6 {
+  color: var(--dark);
+}
+
+/* Card adjustments for dark mode */
+html.dark-mode .service-card,
+html.dark-mode .project-card {
+  background-color: var(--card-bg);
+  border-color: var(--border);
+}
+
+/* Button overrides for dark mode */
+html.dark-mode .btn-primary {
+  background-color: var(--primary);
+  color: #111613; /* Dark text for contrast against accent color */
+}
+
+html.dark-mode .btn-primary:hover {
+  background-color: #d1ab82;
+  box-shadow: 0 10px 20px rgba(197, 154, 106, 0.15);
+}
+
+html.dark-mode .btn-secondary {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+html.dark-mode .btn-secondary:hover {
+  background-color: var(--primary);
+  color: #111613;
+}
+
+html.dark-mode .footer-bg {
+    background-color: #111613 !important;
+    color: #fff !important;
+    border-top: none;
+}
+html.dark-mode .footer-bg h3, html.dark-mode .footer-bg h4 {
+    color: #fff !important;
+}
+html.dark-mode .footer-bg .footer-text {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+html.dark-mode .footer-bg .footer-link {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+html.dark-mode .footer-bg .footer-link:hover {
+    color: var(--secondary) !important;
+}
+
+/* Background utilities override for Dark Mode */
+html.dark-mode .bg-white,
+html.dark-mode .bg-light {
+    background-color: var(--card-bg) !important;
+    color: var(--text-main) !important;
+    border-color: var(--border) !important;
+}
+
+html.dark-mode .text-dark {
+    color: var(--dark) !important;
+}
+html.dark-mode .text-muted {
+    color: var(--text-secondary) !important;
+}
+
+html.dark-mode .hero-bg::before {
+    background-color: rgba(17, 22, 19, 0.85) !important;
+}
+
+/* Form Controls */
+html.dark-mode .form-control {
+    background-color: var(--background);
+    color: var(--text-main);
+    border-color: var(--border);
+}
+html.dark-mode .form-control:focus {
+    background-color: var(--background-light);
+    color: var(--text-main);
+    border-color: var(--primary);
+    box-shadow: 0 0 0 0.25rem rgba(197, 154, 106, 0.25);
+}
+html.dark-mode .form-control::placeholder {
+    color: var(--text-secondary);
+}
