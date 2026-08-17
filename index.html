@@ -1,1 +1,504 @@
-test2
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Furniture Assembly & Installation Service</title>
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+    <meta name="description"
+        content="Professional assembly, mounting and installation services for homes, offices and modern living spaces. From flat-pack to finished space.">
+
+    <!-- Bootstrap CSS (Grid & Utilities) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+
+<body>
+
+    <!-- Sticky Navigation -->
+    <nav class="navbar navbar-expand-xl fixed-top py-3"
+        style="background-color: var(--card-bg); border-bottom: 1px solid var(--border);">
+        <div class="container">
+            <a class="navbar-brand serif d-flex align-items-center" href="index.html"
+                style="font-size: 22px; font-weight: 500; color: var(--primary);">
+                <img src="assets/images/favicon.svg" width="28" height="28" alt="Logo" class="me-2">The Assemblers.
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" id="mobile-menu-btn" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="ri-menu-line" style="font-size: 22px; color: var(--dark);"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mobile-nav">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link text-main" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-main" href="home-2.html">Home 2</a></li>
+                    <li class="nav-item"><a class="nav-link text-main" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link text-main" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link text-main" href="how-it-works.html">How It Works</a></li>
+                    <li class="nav-item"><a class="nav-link text-main" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link text-main" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link text-main" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-3">
+                    <button id="theme-toggle" class="btn btn-link p-0 text-dark text-decoration-none"
+                        aria-label="Toggle dark mode">
+                        <i class="ri-moon-line fs-4 text-dark theme-rtl-icon"></i>
+                    </button>
+                    <button id="rtl-toggle" class="btn btn-link p-0 text-dark text-decoration-none"
+                        aria-label="Toggle RTL">
+                        <i class="ri-arrow-left-right-line fs-4 text-dark theme-rtl-icon"></i>
+                    </button>
+                    <a href="signup.html" class="btn btn-primary px-4 py-2 fs-6"
+                        style="font-size: 16px !important;">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main style="margin-top: 80px;">
+
+        <!-- SECTION 01: HERO -->
+        <section class="hero position-relative overflow-hidden hero-bg"
+            style="min-height: 90vh; display: flex; align-items: center; background-color: var(--background-light);">
+            <div class="container position-relative z-index-1">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 pe-lg-5 animate-reveal">
+                        <span class="text-uppercase tracking-wider fw-bold mb-3 d-block"
+                            style="color: var(--accent); font-size: 12px; letter-spacing: 2px;">Furniture Assembly &
+                            Installation</span>
+                        <h1 class="serif mb-4">Beautiful Furniture.<br>Perfectly Installed.</h1>
+                        <p class="lead mb-5" style="font-size: 18px; max-width: 500px;">Professional assembly, mounting
+                            and installation services for homes, offices and modern living spaces.</p>
+                        <div class="d-flex flex-wrap gap-3">
+                            <a href="services.html" class="btn btn-secondary">Explore Services</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-5 mt-lg-0 animate-reveal" style="transition-delay: 0.2s;">
+                        <div class="position-relative">
+                            <img src="assets/images/home1-hero.jpg" alt="Finished modern living room"
+                                class="img-fluid rounded"
+                                style="box-shadow: 0 30px 60px rgba(0,0,0,0.1); border-radius: var(--radius-lg) !important;">
+                            <!-- Floating Label -->
+                            <div class="position-absolute bg-white px-4 py-3 rounded shadow-sm"
+                                style="bottom: -20px; left: -20px; border: 1px solid var(--border);">
+                                <div class="d-flex align-items-center gap-2">
+                                    <i class="ri-checkbox-circle-fill"
+                                        style="color: var(--accent); font-size: 20px;"></i>
+                                    <span class="fw-bold" style="font-size: 14px; letter-spacing: 1px;">ASSEMBLY
+                                        &middot; MOUNTING &middot; INSTALLATION</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 02: SERVICES -->
+        <section class="section-padding">
+            <div class="container">
+                <div class="text-center mb-5 animate-reveal">
+                    <h2 class="serif">One Service For Every Installation.</h2>
+                    <p class="mx-auto" style="max-width: 600px;">From flat-pack furniture to complex modular kitchens,
+                        we bring professional precision to every piece.</p>
+                </div>
+                <div class="row g-4">
+                    <!-- Service 1 -->
+                    <div class="col-md-6 col-lg-4 animate-reveal">
+                        <div class="service-card">
+                            <img style="height: 250px; object-fit: cover; width: 100%;" src="assets/images/img1.jpg"
+                                alt="Flat-pack assembly">
+                            <span class="text-muted mb-2"
+                                style="font-size: 12px; font-weight: 600; letter-spacing: 1px;">01</span>
+                            <h3 class="h4 mb-3">Flat-Pack Furniture</h3>
+                            <p>Professional assembly for IKEA-style and standard flat-pack items.</p>
+                            <div class="mt-auto pt-4 d-flex align-items-center justify-content-between border-top"
+                                style="border-color: var(--border) !important;">
+                                <span class="small text-muted"><i class="ri-time-line me-1"></i>1-3 Hours</span>
+                                <a href="#" class="fw-bold" style="font-size: 14px;">View Details <i
+                                        class="ri-arrow-right-line align-middle"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Service 2 -->
+                    <div class="col-md-6 col-lg-4 animate-reveal" style="transition-delay: 0.1s;">
+                        <div class="service-card">
+                            <img style="height: 250px; object-fit: cover; width: 100%;" src="assets/images/img2.jpg"
+                                alt="TV Wall Mounting">
+                            <span class="text-muted mb-2"
+                                style="font-size: 12px; font-weight: 600; letter-spacing: 1px;">02</span>
+                            <h3 class="h4 mb-3">TV Wall Mounting</h3>
+                            <p>Secure, perfectly leveled wall mounting with hidden cable management.</p>
+                            <div class="mt-auto pt-4 d-flex align-items-center justify-content-between border-top"
+                                style="border-color: var(--border) !important;">
+                                <span class="small text-muted"><i class="ri-time-line me-1"></i>1-2 Hours</span>
+                                <a href="#" class="fw-bold" style="font-size: 14px;">View Details <i
+                                        class="ri-arrow-right-line align-middle"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Service 3 -->
+                    <div class="col-md-6 col-lg-4 animate-reveal" style="transition-delay: 0.2s;">
+                        <div class="service-card">
+                            <img style="height: 250px; object-fit: cover; width: 100%;" src="assets/images/img3.jpg"
+                                alt="Shelf Installation">
+                            <span class="text-muted mb-2"
+                                style="font-size: 12px; font-weight: 600; letter-spacing: 1px;">03</span>
+                            <h3 class="h4 mb-3">Shelf Installation</h3>
+                            <p>Floating shelves and wall units installed securely onto any wall type.</p>
+                            <div class="mt-auto pt-4 d-flex align-items-center justify-content-between border-top"
+                                style="border-color: var(--border) !important;">
+                                <span class="small text-muted"><i class="ri-time-line me-1"></i>1-2 Hours</span>
+                                <a href="#" class="fw-bold" style="font-size: 14px;">View Details <i
+                                        class="ri-arrow-right-line align-middle"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Service 4 -->
+                    <div class="col-md-6 col-lg-4 animate-reveal">
+                        <div class="service-card">
+                            <img style="height: 250px; object-fit: cover; width: 100%;" src="assets/images/img4.jpg"
+                                alt="Wardrobe Assembly">
+                            <span class="text-muted mb-2"
+                                style="font-size: 12px; font-weight: 600; letter-spacing: 1px;">04</span>
+                            <h3 class="h4 mb-3">Wardrobe Assembly</h3>
+                            <p>Large structural wardrobes, sliding doors, and internal storage fitting.</p>
+                            <div class="mt-auto pt-4 d-flex align-items-center justify-content-between border-top"
+                                style="border-color: var(--border) !important;">
+                                <span class="small text-muted"><i class="ri-time-line me-1"></i>2-4 Hours</span>
+                                <a href="#" class="fw-bold" style="font-size: 14px;">View Details <i
+                                        class="ri-arrow-right-line align-middle"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Service 5 -->
+                    <div class="col-md-6 col-lg-4 animate-reveal" style="transition-delay: 0.1s;">
+                        <div class="service-card">
+                            <img style="height: 250px; object-fit: cover; width: 100%;" src="assets/images/img5.jpg"
+                                alt="Modular Kitchen Fitting">
+                            <span class="text-muted mb-2"
+                                style="font-size: 12px; font-weight: 600; letter-spacing: 1px;">05</span>
+                            <h3 class="h4 mb-3">Modular Kitchen Fitting</h3>
+                            <p>Cabinet assembly, alignment, and secure wall mounting for kitchen spaces.</p>
+                            <div class="mt-auto pt-4 d-flex align-items-center justify-content-between border-top"
+                                style="border-color: var(--border) !important;">
+                                <span class="small text-muted"><i class="ri-time-line me-1"></i>4-8 Hours</span>
+                                <a href="#" class="fw-bold" style="font-size: 14px;">View Details <i
+                                        class="ri-arrow-right-line align-middle"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Service 6 -->
+                    <div class="col-md-6 col-lg-4 animate-reveal" style="transition-delay: 0.2s;">
+                        <div class="service-card">
+                            <img style="height: 250px; object-fit: cover; width: 100%;" src="assets/images/img6.jpg"
+                                alt="Office Furniture">
+                            <span class="text-muted mb-2"
+                                style="font-size: 12px; font-weight: 600; letter-spacing: 1px;">06</span>
+                            <h3 class="h4 mb-3">Office Furniture</h3>
+                            <p>Desks, ergonomic chairs, and storage solutions assembled efficiently.</p>
+                            <div class="mt-auto pt-4 d-flex align-items-center justify-content-between border-top"
+                                style="border-color: var(--border) !important;">
+                                <span class="small text-muted"><i class="ri-time-line me-1"></i>1-3 Hours</span>
+                                <a href="#" class="fw-bold" style="font-size: 14px;">View Details <i
+                                        class="ri-arrow-right-line align-middle"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 03: ROOM TRANSFORMATIONS -->
+        <section class="section-padding bg-light border-top border-bottom"
+            style="border-color: var(--border) !important;">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 mb-5 mb-lg-0 animate-reveal">
+                        <h2 class="serif text-dark mb-4">From Boxes To Beautiful Spaces.</h2>
+                        <p class="text-muted mb-5" style="font-size: 18px;">Slide to see the transformation. We take the
+                            frustration out of flat-packs and deliver a space ready to enjoy. Our seasoned experts
+                            ensure that every screw, dowel, and hinge is perfectly placed so your furniture looks
+                            flawless and lasts for years.</p>
+
+                        <div class="d-flex flex-column flex-md-row gap-3 overflow-auto pb-3 mb-4">
+                            <button class="btn bg-primary text-white border-primary rounded-pill px-4 active">Living
+                                Room</button>
+                            <button class="btn btn-outline-dark rounded-pill px-4">Bedroom</button>
+                            <button class="btn btn-outline-dark rounded-pill px-4">Home Office</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 animate-reveal">
+                        <!-- Before/After Slider Placeholder -->
+                        <div class="position-relative w-100 overflow-hidden rounded"
+                            style="aspect-ratio: 4/3; border: 1px solid rgba(255,255,255,0.1);">
+                            <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=1200&auto=format&fit=crop"
+                                alt="After" class="w-100 h-100 object-fit-cover position-absolute top-0 start-0">
+                            <!-- Visual cue for slider -->
+                            <div class="position-absolute top-0 bottom-0 start-50 bg-white"
+                                style="width: 2px; transform: translateX(-50%); z-index: 2;">
+                                <div class="position-absolute top-50 start-50 translate-middle bg-white rounded-circle d-flex align-items-center justify-content-center shadow"
+                                    style="width: 40px; height: 40px;">
+                                    <i class="ri-drag-move-fill text-dark fs-5"></i>
+                                </div>
+                            </div>
+                            <!-- Mock Before Image -->
+                            <div class="position-absolute top-0 bottom-0 start-0 overflow-hidden"
+                                style="width: 50%; z-index: 1;">
+                                <img src="https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a?q=80&w=1200&auto=format&fit=crop"
+                                    alt="Before" class="w-200 h-100 object-fit-cover"
+                                    style="width: 200%; max-width: none;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 04: HOW IT WORKS -->
+        <section class="section-padding" style="background-color: var(--background-light);">
+            <div class="container">
+                <div class="text-center mb-5 animate-reveal">
+                    <h2 class="serif">Simple From Start To Finish.</h2>
+                </div>
+
+                <div class="row position-relative">
+                    <!-- Architectural connecting line for desktop -->
+
+
+                    <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 text-center animate-reveal position-relative z-index-1">
+                        <div class="border rounded p-4 h-100 bg-white" style="border-color: var(--border) !important;">
+                            <div class="bg-white rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4 shadow-sm"
+                                style="width: 80px; height: 80px; border: 1px solid var(--border);">
+                                <span class="fs-4 fw-bold serif" style="color: var(--primary);">01</span>
+                            </div>
+                            <h4 class="h5 mb-3">CHOOSE</h4>
+                            <p class="small">Select your furniture or installation service.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 text-center animate-reveal position-relative z-index-1"
+                        style="transition-delay: 0.1s;">
+                        <div class="border rounded p-4 h-100 bg-white" style="border-color: var(--border) !important;">
+                            <div class="bg-white rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4 shadow-sm"
+                                style="width: 80px; height: 80px; border: 1px solid var(--border);">
+                                <span class="fs-4 fw-bold serif" style="color: var(--primary);">02</span>
+                            </div>
+                            <h4 class="h5 mb-3">BOOK</h4>
+                            <p class="small">Choose your preferred date and time.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 mb-4 mb-md-0 text-center animate-reveal position-relative z-index-1"
+                        style="transition-delay: 0.2s;">
+                        <div class="border rounded p-4 h-100 bg-white" style="border-color: var(--border) !important;">
+                            <div class="bg-white rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4 shadow-sm"
+                                style="width: 80px; height: 80px; border: 1px solid var(--border);">
+                                <span class="fs-4 fw-bold serif" style="color: var(--primary);">03</span>
+                            </div>
+                            <h4 class="h5 mb-3">INSTALL</h4>
+                            <p class="small">Our professional installer arrives and completes the work.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 text-center animate-reveal position-relative z-index-1"
+                        style="transition-delay: 0.3s;">
+                        <div class="border rounded p-4 h-100 bg-white" style="border-color: var(--border) !important;">
+                            <div class="bg-white rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4 shadow-sm"
+                                style="width: 80px; height: 80px; border: 1px solid var(--border);">
+                                <span class="fs-4 fw-bold serif" style="color: var(--primary);">04</span>
+                            </div>
+                            <h4 class="h5 mb-3">ENJOY</h4>
+                            <p class="small">Your furniture is ready to use.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 05: WHY CHOOSE US -->
+        <section class="section-padding">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-5 mb-lg-0 pe-lg-5 animate-reveal">
+                        <img src="assets/images/higher.jpg" alt="Professional Tools" class="img-fluid rounded shadow"
+                            style="border-radius: var(--radius-lg) !important;">
+                    </div>
+                    <div class="col-lg-6 animate-reveal">
+                        <h2 class="serif mb-4">Installation With A Higher Standard.</h2>
+                        <p class="mb-5">We bring white-glove service to furniture assembly, ensuring every piece is
+                            handled with care and positioned perfectly.</p>
+
+                        <div class="row g-4">
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-start gap-3">
+                                    <i class="ri-shield-check-line fs-3" style="color: var(--secondary);"></i>
+                                    <div>
+                                        <h4 class="h6 fw-bold mb-1">Professional Installers</h4>
+                                        <p class="small mb-0">Vetted and highly trained.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-start gap-3">
+                                    <i class="ri-tools-line fs-3" style="color: var(--secondary);"></i>
+                                    <div>
+                                        <h4 class="h6 fw-bold mb-1">Careful Assembly</h4>
+                                        <p class="small mb-0">Precision alignment every time.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-start gap-3">
+                                    <i class="ri-lock-line fs-3" style="color: var(--secondary);"></i>
+                                    <div>
+                                        <h4 class="h6 fw-bold mb-1">Secure Mounting</h4>
+                                        <p class="small mb-0">Safe for heavy items.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-start gap-3">
+                                    <i class="ri-sparkling-line fs-3" style="color: var(--secondary);"></i>
+                                    <div>
+                                        <h4 class="h6 fw-bold mb-1">Clean Workspaces</h4>
+                                        <p class="small mb-0">We take the mess with us.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-start gap-3">
+                                    <i class="ri-money-dollar-circle-line fs-3" style="color: var(--secondary);"></i>
+                                    <div>
+                                        <h4 class="h6 fw-bold mb-1">Transparent Pricing</h4>
+                                        <p class="small mb-0">No hidden fees.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-start gap-3">
+                                    <i class="ri-calendar-event-line fs-3" style="color: var(--secondary);"></i>
+                                    <div>
+                                        <h4 class="h6 fw-bold mb-1">Flexible Scheduling</h4>
+                                        <p class="small mb-0">Same-day available.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 06: BOOK INSTALLATION CTA -->
+        <section class="position-relative py-5" style="min-height: 500px; display: flex; align-items: center;">
+            <div class="position-absolute w-100 h-100 top-0 start-0 z-index-0">
+                <img src="assets/images/home1-bg.jpg" alt="Premium interior" class="w-100 h-100 object-fit-cover"
+                    style="filter: brightness(0.4);">
+            </div>
+            <div class="container position-relative z-index-1 text-center animate-reveal ">
+                <h2 class="serif text-white mb-4" style="font-size: 48px;">Ready To Finish Your Space?</h2>
+                <p class="lead mx-auto text-white-50 mb-5" style="max-width: 600px;">Tell us what needs assembling or
+                    installing and we'll take care of the details.</p>
+                <div class="d-flex justify-content-center gap-3">
+                    <a href="pricing.html" class="btn btn-primary px-5 py-3 fw-bold">Get A Quote</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="pt-5 pb-4  footer-bg">
+        <div class="container pt-4">
+            <div class="row mb-5">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="assets/images/favicon.svg" width="32" height="32" alt="Logo" class="me-2">
+                        <h3 class="serif mb-0" style="font-size: 22px;">The Assemblers.</h3>
+                    </div>
+                    <p class="footer-text small mb-4" style="max-width: 300px;">Professional furniture assembly and
+                        installation for homes, workspaces and modern interiors.</p>
+                    <div class="mt-4">
+                        <a href="#" class="social-icon me-2"><i class="ri-facebook-fill"></i></a>
+                        <a href="#" class="social-icon me-2"><i class="ri-twitter-fill"></i></a>
+                        <a href="#" class="social-icon me-2"><i class="ri-instagram-line"></i></a>
+                        <a href="#" class="social-icon"><i class="ri-linkedin-fill"></i></a>
+                    </div>
+
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h4 class="h6 fw-bold mb-4 " style="letter-spacing: 1px;">SERVICES</h4>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><a href="#" class="footer-link small">Furniture Assembly</a>
+                        </li>
+                        <li class="mb-2"><a href="#" class="footer-link small">TV Mounting</a></li>
+                        <li class="mb-2"><a href="#" class="footer-link small">Shelf Installation</a>
+                        </li>
+                        <li class="mb-2"><a href="#" class="footer-link small">Kitchen Fitting</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h4 class="h6 fw-bold mb-4 " style="letter-spacing: 1px;">COMPANY</h4>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><a href="about.html" class="footer-link small">About</a></li>
+                        <li class="mb-2"><a href="how-it-works.html" class="footer-link small">How It Works</a></li>
+                        <li class="mb-2"><a href="projects.html" class="footer-link small">Projects</a></li>
+                        <li class="mb-2"><a href="pricing.html" class="footer-link small">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h4 class="h6 fw-bold mb-4 " style="letter-spacing: 1px;">SUPPORT</h4>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><a href="contact.html" class="footer-link small">Contact</a></li>
+                        <li class="mb-2"><a href="booking.html" class="footer-link small">Booking</a></li>
+                        <li class="mb-2"><a href="#" class="footer-link small">FAQs</a></li>
+                        <li class="mb-2"><a href="#" class="footer-link small">Service Areas</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="border-top border-secondary pt-4 mt-4 d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <p class="footer-text small mb-0">&copy; 2026 The Assemblers. All rights reserved.</p>
+                <div class="d-flex gap-4 mt-3 mt-md-0">
+
+
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+    <button id="scrollTop" title="Go to top"><i class="ri-arrow-up-line"></i></button>
+    <script>
+        let mybutton = document.getElementById("scrollTop");
+        window.onscroll = function () { scrollFunction() };
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        mybutton.addEventListener("click", function () {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        });
+    </script>
+</body>
+
+</html>

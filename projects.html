@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Premium Furniture Assembly</title>
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+
+<body>
+
+    <!-- Sticky Navigation -->
+    <nav class="navbar navbar-expand-xl fixed-top py-3"
+        style="background-color: var(--card-bg); border-bottom: 1px solid var(--border);">
+        <div class="container">
+            <a class="navbar-brand serif d-flex align-items-center" href="index.html"
+                style="font-size: 22px; font-weight: 500; color: var(--primary);">
+                <img src="assets/images/favicon.svg" width="28" height="28" alt="Logo" class="me-2">The Assemblers.
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" id="mobile-menu-btn" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="ri-menu-line" style="font-size: 22px; color: var(--dark);"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mobile-nav">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link text-main" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-main" href="home-2.html">Home 2</a></li>
+                    <li class="nav-item"><a class="nav-link text-main" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link text-main" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link text-main" href="how-it-works.html">How It Works</a></li>
+                    <li class="nav-item"><a class="nav-link text-main" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link text-main" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link text-main" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-3">
+                    <button id="theme-toggle" class="btn btn-link p-0 text-dark text-decoration-none"
+                        aria-label="Toggle dark mode">
+                        <i class="ri-moon-line fs-4 text-dark theme-rtl-icon"></i>
+                    </button>
+                    <button id="rtl-toggle" class="btn btn-link p-0 text-dark text-decoration-none"
+                        aria-label="Toggle RTL">
+                        <i class="ri-arrow-left-right-line fs-4 text-dark theme-rtl-icon"></i>
+                    </button>
+                    <a href="signup.html" class="btn btn-primary px-4 py-2 fs-6"
+                        style="font-size: 16px !important;">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main style="margin-top: 80px;">
+
+        <!-- SECTION 01: HERO -->
+        <section class="section-padding text-center bg-white border-bottom hero-bg"
+            style="background-image: url('assets/images/project-hero.jpg') !important;">
+            <div class="container animate-reveal">
+                <h1 class="serif mb-4" style="font-size: 56px;">Work That Speaks<br>For Itself.</h1>
+                <p class="lead mx-auto text-muted" style="max-width: 600px;">Explore our recent installations, from
+                    single room setups to complete home furniture assemblies.</p>
+            </div>
+        </section>
+
+        <!-- SECTION 02: PROJECT FILTERS -->
+        <section class="py-4 border-top border-bottom"
+            style="border-color: var(--border) !important; background-color: var(--background-light);">
+            <div class="container">
+                <div class="d-flex flex-wrap gap-2 justify-content-center animate-reveal">
+                    <button class="btn btn-dark rounded-pill px-4">All</button>
+                    <button class="btn btn-outline-secondary border-0 text-dark rounded-pill px-4">Living Room</button>
+                    <button class="btn btn-outline-secondary border-0 text-dark rounded-pill px-4">Bedroom</button>
+                    <button class="btn btn-outline-secondary border-0 text-dark rounded-pill px-4">Office</button>
+                    <button class="btn btn-outline-secondary border-0 text-dark rounded-pill px-4">Kitchen</button>
+                    <button class="btn btn-outline-secondary border-0 text-dark rounded-pill px-4">TV Mounting</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 03: FEATURED PROJECTS (Masonry Grid Simulation) -->
+        <section class="section-padding bg-white">
+            <div class="container">
+                <div class="row g-4">
+                    <!-- Project 1 (Large) -->
+                    <div class="col-lg-8 animate-reveal">
+                        <a href="#" class="d-block text-decoration-none group">
+                            <div class="position-relative overflow-hidden rounded" style="aspect-ratio: 16/10;">
+                                <img src="assets/images/project1.jpg"
+                                    class="w-100 h-100 object-fit-cover transition-transform"
+                                    style="transition: transform var(--transition-slow);">
+                                <div class="position-absolute bottom-0 start-0 p-4 w-100"
+                                    style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);">
+                                    <h3 class="h5 text-white mb-1">Downtown Loft Makeover</h3>
+                                    <p class="small text-white-50 mb-0">Living Room & TV Mounting</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Project 2 (Small Vertical) -->
+                    <div class="col-lg-4 animate-reveal" style="transition-delay: 0.1s;">
+                        <a href="#" class="d-block text-decoration-none group h-100">
+                            <div class="position-relative overflow-hidden rounded h-100" style="min-height: 300px;">
+                                <img src="assets/images/project2.jpg"
+                                    class="w-100 h-100 object-fit-cover transition-transform"
+                                    style="transition: transform var(--transition-slow);">
+                                <div class="position-absolute bottom-0 start-0 p-4 w-100"
+                                    style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);">
+                                    <h3 class="h5 text-white mb-1">Tech Startup Office</h3>
+                                    <p class="small text-white-50 mb-0">Desk Systems</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Project 3 (Small) -->
+                    <div class="col-md-6 animate-reveal">
+                        <a href="#" class="d-block text-decoration-none group">
+                            <div class="position-relative overflow-hidden rounded" style="aspect-ratio: 4/3;">
+                                <img src="assets/images/project3.jpg"
+                                    class="w-100 h-100 object-fit-cover transition-transform"
+                                    style="transition: transform var(--transition-slow);">
+                                <div class="position-absolute bottom-0 start-0 p-4 w-100"
+                                    style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);">
+                                    <h3 class="h5 text-white mb-1">Master Bedroom</h3>
+                                    <p class="small text-white-50 mb-0">Wardrobe & Bed Assembly</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Project 4 (Small) -->
+                    <div class="col-md-6 animate-reveal" style="transition-delay: 0.1s;">
+                        <a href="#" class="d-block text-decoration-none group">
+                            <div class="position-relative overflow-hidden rounded" style="aspect-ratio: 4/3;">
+                                <img src="assets/images/project4.jpg"
+                                    class="w-100 h-100 object-fit-cover transition-transform"
+                                    style="transition: transform var(--transition-slow);">
+                                <div class="position-absolute bottom-0 start-0 p-4 w-100"
+                                    style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);">
+                                    <h3 class="h5 text-white mb-1">Modern Kitchen Fitting</h3>
+                                    <p class="small text-white-50 mb-0">Cabinet Installation</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 04: BEFORE & AFTER (Interactive Comparison) -->
+        <section class="section-padding bg-light border-top border-bottom"
+            style="border-color: var(--border) !important;">
+            <div class="container">
+                <div class="text-center mb-5 animate-reveal">
+                    <h2 class="serif text-dark">The Difference We Make</h2>
+                    <p class="text-muted">Drag the slider to see the transformation.</p>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-10 animate-reveal">
+                        <!-- Before/After Slider Core -->
+                        <div class="position-relative w-100 overflow-hidden rounded shadow-lg"
+                            style="aspect-ratio: 16/9; cursor: col-resize;">
+                            <img src="assets/images/diff1.jpg" alt="After"
+                                class="w-100 h-100 object-fit-cover position-absolute top-0 start-0">
+
+                            <div class="position-absolute top-0 bottom-0 start-50 bg-white"
+                                style="width: 4px; transform: translateX(-50%); z-index: 2;">
+                                <div class="position-absolute top-50 start-50 translate-middle bg-white rounded-circle d-flex align-items-center justify-content-center shadow"
+                                    style="width: 48px; height: 48px;">
+                                    <i class="ri-drag-move-fill text-dark fs-4"></i>
+                                </div>
+                            </div>
+
+                            <div class="position-absolute top-0 bottom-0 start-0 overflow-hidden border-end border-white"
+                                style="width: 50%; z-index: 1;">
+                                <img src="assets/images/diff2.jpg" alt="Before" class="w-200 h-100 object-fit-cover"
+                                    style="width: 200%; max-width: none; filter: grayscale(30%);">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 05: BOOK CTA -->
+        <section class="py-5 bg-white">
+            <div class="container py-4 text-center animate-reveal">
+                <h2 class="serif mb-4">Want a similar result?</h2>
+                <a href="booking.html" class="btn btn-primary px-5 py-3">Sign Up</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER (Condensed) -->
+    <footer class="pt-5 pb-4  footer-bg">
+        <div class="container pt-4">
+            <div class="row mb-5">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="assets/images/favicon.svg" width="32" height="32" alt="Logo" class="me-2">
+                        <h3 class="serif mb-0" style="font-size: 22px;">The Assemblers.</h3>
+                    </div>
+                    <p class="footer-text small mb-4" style="max-width: 300px;">Professional furniture assembly and
+                        installation for homes, workspaces and modern interiors.</p>
+                    <div class="mt-4">
+                        <a href="#" class="social-icon me-2"><i class="ri-facebook-fill"></i></a>
+                        <a href="#" class="social-icon me-2"><i class="ri-twitter-fill"></i></a>
+                        <a href="#" class="social-icon me-2"><i class="ri-instagram-line"></i></a>
+                        <a href="#" class="social-icon"><i class="ri-linkedin-fill"></i></a>
+                    </div>
+
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h4 class="h6 fw-bold mb-4 " style="letter-spacing: 1px;">SERVICES</h4>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><a href="#" class="footer-link small">Furniture Assembly</a></li>
+                        <li class="mb-2"><a href="#" class="footer-link small">TV Mounting</a></li>
+                        <li class="mb-2"><a href="#" class="footer-link small">Shelf Installation</a></li>
+                        <li class="mb-2"><a href="#" class="footer-link small">Kitchen Fitting</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h4 class="h6 fw-bold mb-4 " style="letter-spacing: 1px;">COMPANY</h4>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><a href="about.html" class="footer-link small">About</a></li>
+                        <li class="mb-2"><a href="how-it-works.html" class="footer-link small">How It Works</a></li>
+                        <li class="mb-2"><a href="projects.html" class="footer-link small">Projects</a></li>
+                        <li class="mb-2"><a href="pricing.html" class="footer-link small">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h4 class="h6 fw-bold mb-4 " style="letter-spacing: 1px;">SUPPORT</h4>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><a href="contact.html" class="footer-link small">Contact</a></li>
+                        <li class="mb-2"><a href="booking.html" class="footer-link small">Booking</a></li>
+                        <li class="mb-2"><a href="#" class="footer-link small">FAQs</a></li>
+                        <li class="mb-2"><a href="#" class="footer-link small">Service Areas</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="border-top border-secondary pt-4 mt-4 d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <p class="footer-text small mb-0">&copy; 2026 The Assemblers. All rights reserved.</p>
+                <div class="d-flex gap-4 mt-3 mt-md-0">
+
+
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <button id="scrollTop" title="Go to top"><i class="ri-arrow-up-line"></i></button>
+    <script>
+        let mybutton = document.getElementById("scrollTop");
+        window.onscroll = function () { scrollFunction() };
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        mybutton.addEventListener("click", function () {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        });
+    </script>
+</body>
+
+</html>

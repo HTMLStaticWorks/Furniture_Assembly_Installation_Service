@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing | Premium Furniture Assembly & Installation</title>
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+    <meta name="description"
+        content="Transparent, no-guesswork pricing for furniture assembly, TV mounting, and installation services.">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+
+<body>
+
+    <!-- Sticky Navigation -->
+    <nav class="navbar navbar-expand-xl fixed-top py-3"
+        style="background-color: var(--card-bg); border-bottom: 1px solid var(--border);">
+        <div class="container">
+            <a class="navbar-brand serif d-flex align-items-center" href="index.html"
+                style="font-size: 22px; font-weight: 500; color: var(--primary);">
+                <img src="assets/images/favicon.svg" width="28" height="28" alt="Logo" class="me-2">The Assemblers.
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" id="mobile-menu-btn" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="ri-menu-line" style="font-size: 22px; color: var(--dark);"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mobile-nav">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link text-main" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-main" href="home-2.html">Home 2</a></li>
+                    <li class="nav-item"><a class="nav-link text-main" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link text-main" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link text-main" href="how-it-works.html">How It Works</a></li>
+                    <li class="nav-item"><a class="nav-link text-main" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link text-main" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link text-main" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-3">
+                    <button id="theme-toggle" class="btn btn-link p-0 text-dark text-decoration-none"
+                        aria-label="Toggle dark mode">
+                        <i class="ri-moon-line fs-4 text-dark theme-rtl-icon"></i>
+                    </button>
+                    <button id="rtl-toggle" class="btn btn-link p-0 text-dark text-decoration-none"
+                        aria-label="Toggle RTL">
+                        <i class="ri-arrow-left-right-line fs-4 text-dark theme-rtl-icon"></i>
+                    </button>
+                    <a href="signup.html" class="btn btn-primary px-4 py-2 fs-6"
+                        style="font-size: 16px !important;">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main style="margin-top: 80px;">
+
+        <!-- SECTION 01: HERO -->
+        <section class="section-padding text-center bg-white border-bottom hero-bg position-relative overflow-hidden"
+            style="background-image: url('assets/images/pricing-hero.jpg') !important;">
+            <div class="container position-relative z-index-1 animate-reveal">
+                <h1 class="serif mb-4">Simple Pricing.<br>No Guesswork.</h1>
+                <p class="lead mx-auto" style="max-width: 600px; color: var(--text-secondary);">Clear, upfront pricing
+                    based on the complexity and type of your installation. No hidden fees.</p>
+            </div>
+        </section>
+
+        <!-- SECTION 02: PRICING BY ITEM -->
+        <section class="section-padding" style="background-color: var(--background-light);">
+            <div class="container">
+                <div class="row mb-5 justify-content-between align-items-end animate-reveal">
+                    <div class="col-12 text-center">
+                        <h2 class="serif">Standard Services</h2>
+                        <p class="mb-0 text-muted small">* Demo pricing listed below. Final price may vary.</p>
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Pricing Card -->
+                    <div class="col-md-6 col-lg-4 animate-reveal">
+                        <div class="service-card p-4 border-0 shadow-sm">
+                            <h3 class="h5 fw-bold mb-1">Small Furniture</h3>
+                            <p class="small text-muted mb-4">Chairs, nightstands, small tables</p>
+                            <div class="fs-2 serif fw-bold mb-4 text-primary">$45<span
+                                    class="fs-6 text-muted font-sans fw-normal">/item</span></div>
+                            <ul class="list-unstyled small mb-0 flex-grow-1" style="line-height: 2;">
+                                <li><i class="ri-check-line text-success me-2"></i> Unboxing</li>
+                                <li><i class="ri-check-line text-success me-2"></i> Full Assembly</li>
+                                <li><i class="ri-check-line text-success me-2"></i> Packaging Removal</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Pricing Card -->
+                    <div class="col-md-6 col-lg-4 animate-reveal" style="transition-delay: 0.1s;">
+                        <div class="service-card p-4 border-0 shadow-sm position-relative">
+                            <div class="position-absolute top-0 end-0 bg-dark px-3 py-1 small fw-bold"
+                                style="border-radius: 0 var(--radius-md) 0 var(--radius-md);">POPULAR</div>
+                            <h3 class="h5 fw-bold mb-1">Medium Furniture</h3>
+                            <p class="small text-muted mb-4">Dressers, desks, dining tables</p>
+                            <div class="fs-2 serif fw-bold mb-4 text-primary">$85<span
+                                    class="fs-6 text-muted font-sans fw-normal">/item</span></div>
+                            <ul class="list-unstyled small mb-0 flex-grow-1" style="line-height: 2;">
+                                <li><i class="ri-check-line text-success me-2"></i> Unboxing</li>
+                                <li><i class="ri-check-line text-success me-2"></i> Full Assembly & Leveling</li>
+                                <li><i class="ri-check-line text-success me-2"></i> Packaging Removal</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Pricing Card -->
+                    <div class="col-md-6 col-lg-4 animate-reveal" style="transition-delay: 0.2s;">
+                        <div class="service-card p-4 border-0 shadow-sm">
+                            <h3 class="h5 fw-bold mb-1">Large Furniture</h3>
+                            <p class="small text-muted mb-4">Beds, large shelving units</p>
+                            <div class="fs-2 serif fw-bold mb-4 text-primary">$120<span
+                                    class="fs-6 text-muted font-sans fw-normal">/item</span></div>
+                            <ul class="list-unstyled small mb-0 flex-grow-1" style="line-height: 2;">
+                                <li><i class="ri-check-line text-success me-2"></i> Unboxing</li>
+                                <li><i class="ri-check-line text-success me-2"></i> Structural Assembly</li>
+                                <li><i class="ri-check-line text-success me-2"></i> Packaging Removal</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Pricing Card -->
+                    <div class="col-md-6 col-lg-4 animate-reveal">
+                        <div class="service-card p-4 border-0 shadow-sm">
+                            <h3 class="h5 fw-bold mb-1">TV Mounting</h3>
+                            <p class="small text-muted mb-4">Any size TV on drywall/studs</p>
+                            <div class="fs-2 serif fw-bold mb-4 text-primary">$99<span
+                                    class="fs-6 text-muted font-sans fw-normal">/item</span></div>
+                            <ul class="list-unstyled small mb-0 flex-grow-1" style="line-height: 2;">
+                                <li><i class="ri-check-line text-success me-2"></i> Bracket Installation</li>
+                                <li><i class="ri-check-line text-success me-2"></i> TV Mounting & Leveling</li>
+                                <li><i class="ri-check-line text-success me-2"></i> Basic Cable Management</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Pricing Card -->
+                    <div class="col-md-6 col-lg-4 animate-reveal" style="transition-delay: 0.1s;">
+                        <div class="service-card p-4 border-0 shadow-sm">
+                            <h3 class="h5 fw-bold mb-1">Wardrobes</h3>
+                            <p class="small text-muted mb-4">Standard 2-3 door wardrobes</p>
+                            <div class="fs-2 serif fw-bold mb-4 text-primary">$150<span
+                                    class="fs-6 text-muted font-sans fw-normal">/unit</span></div>
+                            <ul class="list-unstyled small mb-0 flex-grow-1" style="line-height: 2;">
+                                <li><i class="ri-check-line text-success me-2"></i> Full Assembly</li>
+                                <li><i class="ri-check-line text-success me-2"></i> Door Alignment</li>
+                                <li><i class="ri-check-line text-success me-2"></i> Internal Fittings</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Pricing Card -->
+                    <div class="col-md-6 col-lg-4 animate-reveal" style="transition-delay: 0.2s;">
+                        <div class="service-card p-4 border-0 shadow-sm">
+                            <h3 class="h5 fw-bold mb-1">Modular Kitchens</h3>
+                            <p class="small text-muted mb-4">Base and wall cabinets</p>
+                            <div class="fs-2 serif fw-bold mb-4 text-primary">Custom<span
+                                    class="fs-6 text-muted font-sans fw-normal"> Pricing</span></div>
+                            <ul class="list-unstyled small mb-0 flex-grow-1" style="line-height: 2;">
+                                <li><i class="ri-check-line text-success me-2"></i> Consultation Required</li>
+                                <li><i class="ri-check-line text-success me-2"></i> Per Cabinet Pricing</li>
+                                <li><i class="ri-check-line text-success me-2"></i> Full Installation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 03: ADD-ON SERVICES -->
+        <section class="section-padding bg-white">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 mb-5 mb-lg-0 animate-reveal">
+                        <h2 class="serif mb-4">Add-On Services</h2>
+                        <p>Customize your service with additional requirements to ensure your space is exactly how you
+                            want it.</p>
+                    </div>
+                    <div class="col-lg-6 offset-lg-1 animate-reveal">
+                        <ul class="list-group list-group-flush border-top border-bottom"
+                            style="border-color: var(--border) !important;">
+                            <li
+                                class="list-group-item d-flex justify-content-between align-items-center py-4 bg-transparent border-color-custom">
+                                <div>
+                                    <h4 class="h6 fw-bold mb-1">Disassembly</h4>
+                                    <p class="small text-muted mb-0">Taking apart old furniture</p>
+                                </div>
+                                <span class="fw-bold text-primary">+$35 /item</span>
+                            </li>
+                            <li
+                                class="list-group-item d-flex justify-content-between align-items-center py-4 bg-transparent border-color-custom">
+                                <div>
+                                    <h4 class="h6 fw-bold mb-1">Repositioning</h4>
+                                    <p class="small text-muted mb-0">Moving heavy items to other rooms</p>
+                                </div>
+                                <span class="fw-bold text-primary">+$25 /item</span>
+                            </li>
+                            <li
+                                class="list-group-item d-flex justify-content-between align-items-center py-4 bg-transparent border-color-custom">
+                                <div>
+                                    <h4 class="h6 fw-bold mb-1">Same-Day Service</h4>
+                                    <p class="small text-muted mb-0">Expedited urgent installation</p>
+                                </div>
+                                <span class="fw-bold text-primary">+$50 flat</span>
+                            </li>
+                            <li
+                                class="list-group-item d-flex justify-content-between align-items-center py-4 bg-transparent border-color-custom">
+                                <div>
+                                    <h4 class="h6 fw-bold mb-1">Eco-Disposal</h4>
+                                    <p class="small text-muted mb-0">Off-site recycling of all packaging</p>
+                                </div>
+                                <span class="fw-bold text-primary">+$15 /item</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 04: ESTIMATE CALCULATOR -->
+        <section class="section-padding bg-light border-top border-bottom"
+            style="border-color: var(--border) !important;">
+            <div class="container">
+                <div class="text-center mb-5 animate-reveal">
+                    <h2 class="serif text-dark">BUILD YOUR SERVICE</h2>
+                    <p class="text-muted">Get an instant estimate for your project.</p>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 animate-reveal">
+                        <div class="bg-white rounded p-5 shadow-lg text-dark"
+                            style="border-radius: var(--radius-lg) !important;">
+
+                            <!-- Estimator Form -->
+                            <form id="price-estimator" class="row g-4">
+                                <div class="col-md-6">
+                                    <label class="form-label fw-bold small">Item Type</label>
+                                    <select class="form-select py-3" id="est-item" required>
+                                        <option value="" disabled selected>Select an item...</option>
+                                        <option value="45">Chair / Small Table ($45)</option>
+                                        <option value="85">Desk / Medium Table ($85)</option>
+                                        <option value="120">Bed Frame ($120)</option>
+                                        <option value="150">Wardrobe ($150)</option>
+                                        <option value="99">TV Mounting ($99)</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-bold small">Quantity</label>
+                                    <input type="number" class="form-control py-3" id="est-qty" value="1" min="1"
+                                        required>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label fw-bold small">Additional Services</label>
+                                    <div class="d-flex flex-wrap gap-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="35" id="est-add-dis">
+                                            <label class="form-check-label" for="est-add-dis">Disassembly (+$35)</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="25" id="est-add-rep">
+                                            <label class="form-check-label" for="est-add-rep">Repositioning
+                                                (+$25)</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <hr class="my-5" style="border-color: var(--border);">
+
+                            <div
+                                class="d-flex flex-column flex-md-row justify-content-between align-items-center bg-light p-4 rounded">
+                                <div>
+                                    <span class="small text-muted d-block fw-bold text-uppercase">Estimated Service
+                                        Cost</span>
+                                    <div class="fs-1 serif fw-bold text-primary" id="est-total">$0</div>
+                                </div>
+                                <div class="mt-4 mt-md-0">
+                                    <a href="booking.html" class="btn btn-primary px-4 py-3">Sign Up</a>
+                                </div>
+                            </div>
+                            <p class="small text-muted mt-3 mb-0 text-center">Final pricing may vary based on item
+                                complexity, installation conditions and site requirements.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 05: CTA -->
+        <section class="py-5 hero-bg border-top" style="border-color: var(--border) !important;">
+            <div class="container py-5 text-center animate-reveal">
+                <h2 class="serif mb-4 text-dark" style="font-size: 40px;">Have a large project?</h2>
+                <p class="lead mx-auto mb-5 text-muted" style="max-width: 600px;">Contact us for commercial
+                    installations, full home moves, or complex modular kitchen setups.</p>
+                <div class="d-flex justify-content-center gap-3">
+                    <a href="contact.html" class="btn btn-secondary px-5 py-3">Contact Us</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER (Condensed for brevity, same structure) -->
+    <footer class="pt-5 pb-4  footer-bg">
+        <div class="container pt-4">
+            <div class="row mb-5">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="assets/images/favicon.svg" width="32" height="32" alt="Logo" class="me-2">
+                        <h3 class="serif mb-0" style="font-size: 22px;">The Assemblers.</h3>
+                    </div>
+                    <p class="footer-text small mb-4" style="max-width: 300px;">Professional furniture assembly and
+                        installation for homes, workspaces and modern interiors.</p>
+                    <div class="mt-4">
+                        <a href="#" class="social-icon me-2"><i class="ri-facebook-fill"></i></a>
+                        <a href="#" class="social-icon me-2"><i class="ri-twitter-fill"></i></a>
+                        <a href="#" class="social-icon me-2"><i class="ri-instagram-line"></i></a>
+                        <a href="#" class="social-icon"><i class="ri-linkedin-fill"></i></a>
+                    </div>
+
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h4 class="h6 fw-bold mb-4 " style="letter-spacing: 1px;">SERVICES</h4>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><a href="#" class="footer-link small">Furniture Assembly</a></li>
+                        <li class="mb-2"><a href="#" class="footer-link small">TV Mounting</a></li>
+                        <li class="mb-2"><a href="#" class="footer-link small">Shelf Installation</a></li>
+                        <li class="mb-2"><a href="#" class="footer-link small">Kitchen Fitting</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h4 class="h6 fw-bold mb-4 " style="letter-spacing: 1px;">COMPANY</h4>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><a href="about.html" class="footer-link small">About</a></li>
+                        <li class="mb-2"><a href="how-it-works.html" class="footer-link small">How It Works</a></li>
+                        <li class="mb-2"><a href="projects.html" class="footer-link small">Projects</a></li>
+                        <li class="mb-2"><a href="pricing.html" class="footer-link small">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h4 class="h6 fw-bold mb-4 " style="letter-spacing: 1px;">SUPPORT</h4>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><a href="contact.html" class="footer-link small">Contact</a></li>
+                        <li class="mb-2"><a href="booking.html" class="footer-link small">Booking</a></li>
+                        <li class="mb-2"><a href="#" class="footer-link small">FAQs</a></li>
+                        <li class="mb-2"><a href="#" class="footer-link small">Service Areas</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="border-top border-secondary pt-4 mt-4 d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <p class="footer-text small mb-0">&copy; 2026 The Assemblers. All rights reserved.</p>
+                <div class="d-flex gap-4 mt-3 mt-md-0">
+
+
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!-- Estimator Logic -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const itemSelect = document.getElementById('est-item');
+            const qtyInput = document.getElementById('est-qty');
+            const disCheck = document.getElementById('est-add-dis');
+            const repCheck = document.getElementById('est-add-rep');
+            const totalDisplay = document.getElementById('est-total');
+
+            function calculateEstimate() {
+                const itemPrice = parseFloat(itemSelect.value) || 0;
+                const qty = parseInt(qtyInput.value) || 1;
+                let total = itemPrice * qty;
+
+                if (disCheck.checked) total += parseFloat(disCheck.value) * qty;
+                if (repCheck.checked) total += parseFloat(repCheck.value) * qty;
+
+                if (itemPrice === 0) {
+                    totalDisplay.textContent = "$0";
+                } else {
+                    totalDisplay.textContent = "$" + total;
+                }
+            }
+
+            itemSelect.addEventListener('change', calculateEstimate);
+            qtyInput.addEventListener('input', calculateEstimate);
+            disCheck.addEventListener('change', calculateEstimate);
+            repCheck.addEventListener('change', calculateEstimate);
+        });
+    </script>
+    <button id="scrollTop" title="Go to top"><i class="ri-arrow-up-line"></i></button>
+    <script>
+        let mybutton = document.getElementById("scrollTop");
+        window.onscroll = function () { scrollFunction() };
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        mybutton.addEventListener("click", function () {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        });
+    </script>
+</body>
+
+</html>
